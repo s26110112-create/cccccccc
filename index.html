@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+
+<!-- do not change the markup -->
+<a href="#">
+  Checkout
+</a>
+
+<!-- 
+1. make look like a button
+2. change text color red on hover
+
+Cannot change html, only css.
+Look closely at
+-->  
+
+<div></div>
+<div></div>
+<div></div><!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -170,7 +186,7 @@
 
         .progress-bar-fill {
             height: 100%;
-            width: 12.5%; /* 2/16 = 12.5% */
+            width: 18.75%; /* 3/16 = 18.75% */
             background: linear-gradient(90deg, #ff85a2, #b388ff);
             border-radius: 20px;
             transition: width 1s ease-in-out;
@@ -390,10 +406,9 @@
         <!-- 1. 個人檔案標頭區域 -->
         <header class="profile-card">
             <div class="avatar-wrapper">
-                <!-- 預設可愛風格頭像 (可替換為您的照片 URL) -->
                 <img src="https://i.postimg.cc/CKKzpWdW/cccc.jpg" alt="我的大頭貼" class="avatar-img">
                 <div class="avatar-badge">
-                    <i class="fa-solid fa-star"></i> Lv.2
+                    <i class="fa-solid fa-star"></i> Lv.3
                 </div>
             </div>
             
@@ -406,7 +421,7 @@
             <div class="progress-bar-container">
                 <div class="progress-bar-fill"></div>
             </div>
-            <div class="progress-text">通關進度：2 / 16 個關卡 (12.5%)</div>
+            <div class="progress-text">通關進度：3 / 16 個關卡 (18.75%)</div>
         </header>
 
         <!-- 2. 16 個作品關卡按鈕區 (4x4 網格) -->
@@ -428,12 +443,12 @@
                 <div class="card-title">Week 2 - 今天吃甚麼？</div>
             </a>
 
-            <!-- 【Week 3】未解鎖 🔒 (設定 pointer-events: none 阻止點擊) -->
-            <a href="#" class="quest-card locked" onclick="return false;">
-                <span class="badge">🔒 鎖定中</span>
+            <!-- 【Week 3】已解鎖 -->
+            <a href="w3/index.html" class="quest-card unlocked">
+                <span class="badge"><i class="fa-solid fa-check"></i> 已開啓</span>
                 <span class="level-number">WEEK 03</span>
-                <div class="card-icon">🔒</div>
-                <div class="card-title">Week 3 - 未解鎖</div>
+                <div class="card-icon">🤡</div>
+                <div class="card-title">Week 3 - 迷因產生器</div>
             </a>
 
             <!-- 【Week 4】未解鎖 🔒 -->
@@ -534,8 +549,18 @@
 
             <!-- 【Week 16】未解鎖 🔒 -->
             <a href="#" class="quest-card locked" onclick="return false;">
-html {
-  height: 100%;
-  background: 50% 50% no-repeat
-    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
-}
+                <span class="badge">🔒 鎖定中</span>
+                <span class="level-number">WEEK 16</span>
+                <div class="card-icon">🔒</div>
+                <div class="card-title">Week 16 - 未解鎖</div>
+            </a>
+
+        </main>
+
+        <footer>
+            <p>© 2026 我的網頁作品集 | All Rights Reserved</p>
+        </footer>
+    </div>
+
+</body>
+</html>
